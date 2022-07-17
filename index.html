@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid and media practice</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                grid-template-columns: repeat(1, 1fr)
+            }
+         
+        }
+        @media screen and (min-width:577px) and (max-width:992px){
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+       
+        .items{
+            border: 1px solid tomato;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+        .items img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to shop</h1>
+    <div class="container">
+        <div class="items">
+            <img src="image/watch1" alt="">
+            <h2>mens watch</h2>
+            <button>Order Now</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
+        </div>
+        <div class="items">
+            <img src="image/watch2" alt="">
+            <h2>mens watch</h2>
+            <button>Order Now</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
+        </div>
+        <div class="items">
+            <img src="image/watch3" alt="">
+            <h2>mens watch</h2>
+            <button>Order Now</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
+        </div>
+        <div class="items">
+            <img src="image/show5" alt="">
+            <h2>mens shoe</h2>
+            <button>Order Now</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
+        </div>
+        <div class="items">
+            <img src="image/shoe 6" alt="">
+            <h2>mens shoe</h2>
+            <button>Order Now</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
+        </div>
+        <div class="items">
+            <img src="image/shoe 4" alt="">
+            <h2>mens shoe</h2>
+            <button>Order Now</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
+        </div>
+        <div class="items">
+            <img src="image/shirt7" alt="">
+            <h2>mens shirt</h2>
+            <button>Order Now</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
+        </div>
+        <div class="items">
+            <img src="image/shirt8" alt="">
+            <h2>mens shirt</h2>
+            <button>Order Now</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
